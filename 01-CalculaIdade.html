@@ -1,0 +1,33 @@
+<script>
+
+	//alert("Olá, mundo!"); 
+	//alert("Esse é o meu segundo programa!");
+	
+	document.write("Olá, mundo!</br>");
+	document.write("Esse é o meu segundo programa!</br></br>");
+	
+	//Math.Round(media) -- função que arredonda número quebrado.
+	
+	var pulaLinha = function(){
+		document.write("<br>");
+	}
+	
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	var pessoa = "Wilker dos Santos";
+	var idade = 2018-1994; 
+	var idadesBrothers = [24,23,18,3];
+	var ano=2018
+	
+	mostra("Meu nome é: " + pessoa + ", e a minha idade é: " + idade);
+	mostra("A média da minha idade e a de meus irmãos juntas é: " +((idadesBrothers[0] + idadesBrothers[1] + idadesBrothers[2] + idadesBrothers[3]) / 4));
+	mostra("O ano de meu nascimento é: " + (ano - idadesBrothers[0]));
+	mostra("O ano do nascimento do Gustavo é: " + (ano - idadesBrothers[1]));
+	mostra("O ano do nascimento da Sabrina é: " + (ano - idadesBrothers[2]));
+	mostra("O ano de nascimento da Yasmim é: " + (ano - idadesBrothers[3]));
+	
+	console.log("Javascript de autoria de Wilker dos Santos");
+</script>

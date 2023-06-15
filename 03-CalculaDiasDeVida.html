@@ -1,0 +1,20 @@
+<script>
+	var pulaLinha = function(){
+		document.write("<br>");
+	}
+	
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var nome = prompt("Qua é o seu nome?");
+	mostra("Bem vindo, "+ nome);
+	
+	var idade = prompt("Quantos anos você tem?");
+	mostra("Você tem " + idade + " anos");
+	
+	var dias = idade * 365;
+	mostra("Você já viveu " + dias + " dias de vida!");
+	
+</script>

@@ -1,0 +1,31 @@
+<script>	
+	
+	var pulaLinha = function(){
+		document.write("<br>");
+	}
+	
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+		pulaLinha();
+	}
+	
+	
+	var vitorias = parseInt(prompt("Quantos jogos o Corinthians ganhou?"));
+	var empates = parseInt(prompt("Quantos jogos o Corinthians empatou?"));
+	
+	var pontos = (vitorias * 3) + empates;
+	
+	mostra("Nosso time tem: " + pontos + " pontos!");
+	
+	if (pontos > 28) {
+		mostra("O time está disputando Libertadores");
+	}
+	if (pontos < 28) {
+		mostra("O time está na Zona de Rebaixamento");
+	}
+	if (pontos == 28) {
+		mostra("O time está na Zona de Sulamericana");
+	}
+	
+</script>	

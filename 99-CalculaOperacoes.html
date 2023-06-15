@@ -1,0 +1,44 @@
+<script>
+	
+	//Functions das Operacões
+	var adicao = function(num1, num2) {	
+		var result = num1 + num2;
+		return result;
+	}
+	var subtracao = function(num1, num2) {	
+		var result = num1 - num2;
+		return result;
+	}
+	var multiplicacao = function(num1, num2) {	
+		var result = num1 * num2;
+		return result;
+	}
+	var divisao = function(num1, num2) {	
+		var result = num1 / num2;
+		return result;
+	}
+	
+	//Entrada com os valores digitados
+	var modulo = prompt("Escolha o tipo de cálculo: 1-ADIÇÃO 2-SUBTRAÇÃO 3-MULTIPLICAÇÃO 4-DIVISÃO");
+	var num1 = parseInt(prompt("Digite o 1º valor: "));
+	var num2 = parseInt(prompt("Digite o 2º valor: "));
+	
+	//Verificação de qual metodo será acionado
+	if (modulo == 1) {
+		var resultado = adicao(num1,num2);
+		alert("O resultado da adição é: " + resultado);
+	}
+	else if (modulo == 2) {
+		var resultado = subtracao(num1,num2);
+		alert("O resultado da subtracao é: " + resultado);
+	}
+	else if (modulo == 3) {
+		var resultado = multiplicacao(num1,num2);
+		alert("O resultado da multiplicacao é: " + resultado);
+	}
+	else if (modulo == 4) {
+		var resultado = divisao(num1,num2);
+		alert("O resultado da divisao é: " + resultado);
+	}
+
+</script>

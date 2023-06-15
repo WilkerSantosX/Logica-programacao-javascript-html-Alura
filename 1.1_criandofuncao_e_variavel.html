@@ -1,0 +1,41 @@
+﻿<script>
+// Criação de váriaveis, funções e manipulação destas.
+
+var pulaLinha = function(){
+	document.write("<br>")
+};
+
+var mostra = function(frase) {
+	document.write(frase);
+	pulaLinha();
+};
+
+mostra ("Eu nasci em: " + (2017 - 23));
+mostra ("A soma das nossas idades é: " + (25 + 32 + 26) );
+mostra ("A média das nossas idades é: " + ((25 + 32 + 26) / 3) );
+
+console.log ("O valor -5 é para atualizar com a subtração contando com o ano de 2012");
+mostra ("Eu nasci em:" + ((2017 - 23) - 5)); 
+mostra ("Adriano nasceu em" + ((2017 - 26) - 5));
+mostra ("O Paulo nascem em:" + ((2017 - 32)- 5));
+pulaLinha();
+
+var ano = 2012;
+
+mostra ("Eu nasci em:" + (ano - 23)); 
+mostra ("Adriano nasceu em" + (ano - 26));
+mostra ("O Paulo nascem em:" + (ano - 32));
+
+var eu = 25;
+var adriano = 26;
+var paulo = 32;
+
+var total = eu + adriano + paulo;
+mostra("A soma das idades é: " + total);
+
+var media = total / 3;
+mostra ("A média das idades é: " + Math.round(media));
+
+console.log ("Essa mensagem deve aparecer somente para o desenvolvedor!");
+
+</script>

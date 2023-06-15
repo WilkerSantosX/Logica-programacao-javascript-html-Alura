@@ -1,0 +1,28 @@
+<script>	
+	var pulaLinha = function(){
+		document.write("<br>");
+	}
+	
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+		pulaLinha();
+	}
+	
+	var numeroPensado = Math.round(Math.random() * 3);
+	var numeroDaTentativa = 1;
+	
+	while(numeroDaTentativa <= 3) {
+		var chute = prompt("Tentativa: " + numeroDaTentativa + " - Já pensei... Qual número você acha que é?");
+		
+		if (chute == numeroPensado) {
+			mostra("Uau! Você acertou na tentativa: " + numeroDaTentativa + ", pois eu pensei no " + numeroPensado);
+			break;
+		} else {
+			mostra("Tentativa: " + numeroDaTentativa + " - Você errou! Tente novamente!");
+		}		
+	
+		numeroDaTentativa++;
+	}
+
+</script>

@@ -1,0 +1,18 @@
+<script>	
+	
+	var pulaLinha = function(){
+		document.write("<br>");
+	}
+	
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var multiplo = parseInt(prompt("Informe a tabuada que deseja:"));
+	
+	for (var multiplicador = 0; multiplicador <= 10; multiplicador = multiplicador + 1) {
+		mostra(multiplo + " X " + multiplicador + " = " + multiplo * multiplicador);
+	}
+
+</script>	

@@ -1,0 +1,22 @@
+﻿<script>	
+	
+	var pulaLinha = function(){
+		document.write("<br>");
+	}
+	
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoDeCopa = parseInt(prompt("Informe o ano inicial das Copas: "));
+	var anoLimite = parseInt(prompt("Informe o ano final das Copas: "));
+	
+	while (anoDeCopa <= anoLimite) {
+		mostra("Houve realização de Copa em " + anoDeCopa);
+		anoDeCopa = anoDeCopa + 4;
+	}
+	
+	mostra("Foram esses anos de Copa até: " + anoLimite + ".");
+
+</script>	
